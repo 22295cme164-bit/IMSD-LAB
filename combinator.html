@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            /*.university p{
+                background-color: bisque;   //descendant combinator
+            }*/
+            .university > p{
+                background-color: bisque;  
+            }
+            /* child combinator*/
+            /*.department > p{
+                background-color: aquamarine;
+            }
+            h2+p{
+                background-color: aqua;  //adjacent sibling
+            }*/
+            h2~p{
+                background-color: cadetblue;
+            }
+            /*general sibling*/
+        </style>
+    </head>
+    <body>
+        <h1>Aditya University Info</h1>
+        <div class="university">
+            <div class="department">
+                <h2>CSE</h2>
+                <p>Head: Ms.Sudha Rani T</p>
+                <p>Associate Professor</p>
+                <h2>Faculty</h2>
+                <p>Prof.Ramesh</p>
+                <p>Prof.Sivaram</p>
+            </div>
+            <div class="department">
+                <h2>IT</h2>
+                <p>Head: Mr.A.Rajababu</p>
+                <p>Associate Professor</p>
+                <h2>Faculty</h2>
+                <p>Prof.Balaram</p>
+                <p>Prof.Kalyan</p>
+            </div>
+            <p>This is testing university styles</p>
+        </div>
+        <p>This is testing paragraph styles</p>
+    </body>
+</html>
